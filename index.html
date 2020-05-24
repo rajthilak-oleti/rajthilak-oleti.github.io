@@ -27,18 +27,18 @@
             </div>
             <div class="side-nav">
                 <ul>
-                   <li><a href="#home" class = "side-nav-link"><i class="fa fa-home"></i>Home</a></li>
-                   <li><a href="#aboutMe" class = "side-nav-link"><i class="fa fa-user"></i>About Me</a></li>
-                   <li><a href="#services" class = "side-nav-link"><i class="fas fa-pencil-alt"></i>Services</a></li>
-                   <li><a href="#resume" class = "side-nav-link"><i class="fa fa-cogs"></i>Resume</a></li>
-                   <li><a href="#projects" class = "side-nav-link"><i class="fa fa-suitcase"></i>Projects</a></li>
-                   <li><a href="#blog" class = "side-nav-link"><i class="fa fa-comments"></i>Blog</a></li>
-                   <li><a href="#contact" class = "side-nav-link"><i class="fa fa-envelope"></i>Contact</a></li>
+                   <li><a class = "side-nav-link home"><i class="fa fa-home"></i>Home</a></li>
+                   <li><a class = "side-nav-link aboutMe"><i class="fa fa-user"></i>About Me</a></li>
+                   <li><a class = "side-nav-link services"><i class="fas fa-pencil-alt"></i>Services</a></li>
+                   <li><a class = "side-nav-link resume"><i class="fa fa-cogs"></i>Resume</a></li>
+                   <li><a class = "side-nav-link projects"><i class="fa fa-suitcase"></i>Projects</a></li>
+                   <li><a class = "side-nav-link blog"><i class="fa fa-comments"></i>Blog</a></li>
+                   <li><a class = "side-nav-link contact"><i class="fa fa-envelope"></i>Contact</a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="right-section col-12 col-lg-10">
+        <div id="right-section" class="right-section col-12 col-lg-10">
             <div class="nav-btn btn btn-dark d-block d-lg-none">
                 <i class="fas fa-bars"></i>
             </div>
@@ -293,7 +293,7 @@
             </div>    
 
             <!-- projects div Starts -->
-            <div class="projects-section container-fluid">
+            <div id="projects" class="projects-section container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-heading">
@@ -373,7 +373,7 @@
             <!-- projects div ends -->
 
             <!-- contact us div starts -->
-            <div class="contactMe-div container-fluid">
+            <div id="contact" class="contactMe-div container-fluid">
                 <div class="contactMe-div-overlay">
                         <div class="row">
                                 <div class="col-md-12">
@@ -497,7 +497,6 @@
                 let element= filterDivArray[i];    
                 let classArray= element.className.split(" ");
                 if(classArray.indexOf(customClass) == -1){
-                    // element.className+= customClass;
                     classArray.push(customClass);
                     let editedClassName= classArray.join(" ");
                     element.className = editedClassName;
@@ -538,7 +537,27 @@
         }
         
         //Projects Filtering ends
+        
+        const navLinksArray = document.getElementsByClassName('side-nav-link');
+        Array.from(navLinksArray).forEach((element) => {
+            element.addEventListener('click', function() {
+                const regex = /side-nav-link /gi;
+                const className = this.className.replace(regex, '');
+                scrollToSelectedSection(className);
+                removeActiveClassForAllLinks();
+                this.classList.add('active');
+            });
+        });
 
+        function removeActiveClassForAllLinks() {
+            Array.from(navLinksArray).forEach((link) => {
+                link.classList.remove('active');
+            })
+        }
+        function scrollToSelectedSection(element) {
+            let y = Math.floor(document.getElementById(element).offsetTop);
+            document.getElementById('right-section').scrollTop = y;
+        }
     </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
