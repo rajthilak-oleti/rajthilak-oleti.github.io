@@ -234,17 +234,14 @@ html body{
                         text-decoration: none;
                         color: $color-tan;
                         padding: 3% 10%;
+                        &.active {
+                            background-color: white;
+                            color: black
+                        }
                         
                         i{
                             margin-right: 10px;
                             font-size: 15px;
-                        }
-                    } 
-
-                    &:hover{
-                        background: darken($color-dark2 , 2%);
-                        a{
-                            color : $color-light;
                         }
                     }
                 }
@@ -259,6 +256,9 @@ html body{
         padding: 0;
         width: 100%;
         position: relative;
+        max-height: 100vh;
+        overflow: hidden auto;
+        scroll-behavior: smooth; 
 
         .nav-btn{
             position: fixed;

@@ -136,19 +136,21 @@ html body {
             text-decoration: none;
             color: #cf9c63;
             padding: 3% 10%; }
+            .main-wrapper .side-menu .side-nav ul li a.active {
+              background-color: white;
+              color: black; }
             .main-wrapper .side-menu .side-nav ul li a i {
               margin-right: 10px;
               font-size: 15px; }
-          .main-wrapper .side-menu .side-nav ul li:hover {
-            background: #1e1e1e; }
-            .main-wrapper .side-menu .side-nav ul li:hover a {
-              color: white; }
   .main-wrapper .right-section {
     float: left;
     margin-left: 16.6666%;
     padding: 0;
     width: 100%;
-    position: relative; }
+    position: relative;
+    max-height: 100vh;
+    overflow: hidden auto;
+    scroll-behavior: smooth; }
     .main-wrapper .right-section .nav-btn {
       position: fixed;
       color: #cf9c63;
