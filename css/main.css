@@ -351,35 +351,54 @@ html body {
         padding: 20px 15px; }
         .main-wrapper .right-section .services-section .serviceCard-deck .serviceCard {
           position: relative;
-          border-radius: 5px;
-          padding: 10px 30px;
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+          box-sizing: border-box;
+          padding: 60px 22px;
+          background: transparent;
+          border: 1px solid #cf9c63;
+          max-height: 500px;
+          min-height: 500px;
+          transition: all .5s linear; }
+          .main-wrapper .right-section .services-section .serviceCard-deck .serviceCard .header, .main-wrapper .right-section .services-section .serviceCard-deck .serviceCard .card-title {
+            margin-bottom: 15px;
+            text-align: center; }
           .main-wrapper .right-section .services-section .serviceCard-deck .serviceCard .icon-container {
-            position: absolute;
-            top: -30px;
-            left: 50%;
-            transform: translateX(-50%);
             border-radius: 100px;
-            width: 70px;
-            height: 70px;
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+            width: 90px;
+            height: 90px;
             background: #cf9c63;
-            transition: transform .5s ease; }
+            transition: transform .5s ease;
+            margin: 0 auto; }
             .main-wrapper .right-section .services-section .serviceCard-deck .serviceCard .icon-container i {
               color: white;
               margin: 50%;
               transform: translate(-50%, -50%);
               font-size: 35px; }
+          .main-wrapper .right-section .services-section .serviceCard-deck .serviceCard p {
+            font-size: 18px;
+            margin: 26px 4px;
+            text-align: center; }
           .main-wrapper .right-section .services-section .serviceCard-deck .serviceCard .card-inner-grid {
             margin: 20px 0px 20px 0px; }
           .main-wrapper .right-section .services-section .serviceCard-deck .serviceCard:hover {
-            background-color: #cf9c63;
-            color: white; }
+            color: white;
+            z-index: 1; }
             .main-wrapper .right-section .services-section .serviceCard-deck .serviceCard:hover .icon-container {
-              background-color: white;
-              transform: translateX(-30%); }
+              background-color: white; }
               .main-wrapper .right-section .services-section .serviceCard-deck .serviceCard:hover .icon-container i {
                 color: #cf9c63; }
+            .main-wrapper .right-section .services-section .serviceCard-deck .serviceCard:hover:after {
+              height: 100%; }
+          .main-wrapper .right-section .services-section .serviceCard-deck .serviceCard:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 0px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: #cf9c63;
+            transition: all .3s linear;
+            z-index: -1; }
     .main-wrapper .right-section .resume-section {
       background: #f7f7f7; }
       .main-wrapper .right-section .resume-section .m-wrapper h4 {
