@@ -357,7 +357,7 @@ html body {
           transform: translateX(0%);
 }
 
-.main-wrapper .side-menu .side-nav ul li a i {
+.main-wrapper .side-menu .side-nav ul li a svg.svg-inline--fa {
   margin-right: 10px;
   font-size: 15px;
 }
@@ -594,7 +594,7 @@ html body {
   transition: all .5s linear;
 }
 
-.main-wrapper .right-section .services-section .serviceCard-deck .serviceCard .icon-container i {
+.main-wrapper .right-section .services-section .serviceCard-deck .serviceCard .icon-container svg.svg-inline--fa {
   color: #cf9c63;
   margin: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -633,7 +633,7 @@ html body {
   background-color: #cf9c63;
 }
 
-.main-wrapper .right-section .services-section .serviceCard-deck .serviceCard:hover .icon-container i, .main-wrapper .right-section .services-section .serviceCard-deck .serviceCard.active .icon-container i {
+.main-wrapper .right-section .services-section .serviceCard-deck .serviceCard:hover .icon-container svg.svg-inline--fa, .main-wrapper .right-section .services-section .serviceCard-deck .serviceCard.active .icon-container svg.svg-inline--fa {
   color: white;
 }
 
@@ -843,7 +843,7 @@ html body {
   padding: 8px 30px;
 }
 
-.main-wrapper .right-section .download-resume-section .download-section-overlay .downloadBtn i {
+.main-wrapper .right-section .download-resume-section .download-section-overlay .downloadBtn svg.svg-inline--fa {
   margin: 0px 5px;
 }
 

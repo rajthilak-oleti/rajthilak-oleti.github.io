@@ -313,9 +313,9 @@ html body{
                                 transform: translateX(0%);
                             }
                         }
-                        i{
-                            margin-right: 10px;
-                            font-size: 15px;
+                        svg.svg-inline--fa{
+                          margin-right: 10px;
+                          font-size: 15px;
                         }
                         &::before {
                             content: '';
@@ -534,7 +534,7 @@ html body{
                         transition: transform .5s ease;
 												border: 1px solid #ffdab0;
 												transition: all .5s linear;
-                        i {
+                        svg.svg-inline--fa {
                             color: $color-tan;
                             margin: 50%;
                             transform: translate(-50%, -50%);
@@ -564,7 +564,7 @@ html body{
                     z-index: 1;
                     .icon-container {
 											background-color: $color-tan;
-                      i {
+                      svg.svg-inline--fa {
 												color: white;
                       }
                     }
@@ -762,7 +762,7 @@ html body{
 
                     .downloadBtn {
                         padding: 8px 30px;
-                        i {
+                        svg.svg-inline--fa {
                             margin: 0px 5px;
                         }
                     }
