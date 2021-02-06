@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "description": "Raj Thilak Portfolio",
   "main": "index.js",
-  "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/main.css -w"
-  },
+  "scripts": {},
   "author": "Raj",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "node-sass": "^4.13.1"
-  }
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2"
+  },
+  "devDependencies": {}
 }
