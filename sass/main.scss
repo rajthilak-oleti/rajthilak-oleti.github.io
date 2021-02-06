@@ -808,38 +808,48 @@ html body{
                         display: none;
 
                         .img-overlay-div{
-                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                             width: 100%;
                             height: 100%;
                             background: $color-overlay;
-                            display: none;
+                            opacity: 0;
                             color: $color-light;
+                            transition: all .3s linear;
 
                             .overlay-content{
-                                position: absolute;
-                                padding: 2% 3%;
-                                bottom: 0;
-                                left: 0;
-                                font-family: $font-poppins;
+                              width: 100%;
+                              text-align: center;
+                              padding: 2% 3%;
+                              font-family: $font-poppins;
 
-                                h4{
-                                    font-size: 16px;
-                                    font-weight: bold;
-                                }
+                              h4{
+                                font-size: 16px;
+                                font-weight: bold;
+                                transform: translateX(-100%);
+                                opacity: 0;
+                                transition: all .3s linear;
+                              }
 
-                                span{
-                                    color: $color-tan;
-                                }
+                              p{
+                                color: $color-tan;
+                                transform: translateX(100%);
+                                opacity: 0;
+                                transition: all .5s linear;
+                              }
                             }
                         }
                         
                         &:hover{
-                            transform: scale(1.1);
-                            box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.2) !important;
-                            transition-duration: .5s;
                             .img-overlay-div{
-                                display: block;
-                                animation: overlay-reveal .3s linear;
+                              opacity: 1;
+                              .overlay-content {
+                                h4, p {
+                                  transform: translateX(0);
+                                  opacity: 1;
+                                }
+                              }
                             }
                         }
                         
@@ -958,17 +968,21 @@ html body{
 
         // ====  Social Links section Starts  ====
         .social-links-section{
-            padding: 5%;
-            .row{
-                margin-top: 1%;
+            padding: 35px;
+            .social-section-inner-grid{
+              margin-top: 1%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
                 .icon-container{
-                    padding: .5% 1%;
-                    background-color: $color-dark;
-                    margin: 0% 1%;
-                    text-align: center;
-                    border: 1px solid $color-dark;
-                    position: relative;
-                    max-width: 4%;
+                  background-color: $color-dark;
+                  text-align: center;
+                  color: white;
+                  border: 1px solid $color-dark;
+                  position: relative;
+                  width: 35px;
+                  height: 35px;
+                  margin: 10px;
 
                     &:after{
                         content: '';
@@ -992,24 +1006,22 @@ html body{
                         }
                     }
 
-                    // &:active{
-                    //     transform: translateY(5px);
-                    // }
-
-                    .fab{
-                        color: $color-light;
-                        font-size: 15px;
-                        // padding: 1%;
-                    }
+                  .icon-container-inner {
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                  }
                 }
             }
-            .copyrights-row{
+            .copyrights-text{
                 color: $color-dark;
-                padding: 1%;
+                padding: 5px;
                 span{
-                    margin: 0% 1%;
-                    padding-bottom: 2px;
-                    border-bottom: 1px solid $color-tan;
+                  margin: 0px 5px;
+                  padding-bottom: 2px;
+                  border-bottom: 1px solid $color-tan;
                 }
             }
             
