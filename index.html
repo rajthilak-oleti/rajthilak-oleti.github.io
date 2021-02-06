@@ -25,17 +25,17 @@
                 <h1>RajThilak Oleti</h1>
                 <span>Web Developer</span>
             </div>
-            <div class="side-nav">
+            <nav class="side-nav">
                 <ul>
-                   <li><a class = "side-nav-link home active"><i class="fa fa-home"></i>Home</a></li>
-                   <li><a class = "side-nav-link aboutMe"><i class="fa fa-user"></i>About Me</a></li>
-                   <li><a class = "side-nav-link services"><i class="fas fa-pencil-alt"></i>Services</a></li>
-                   <li><a class = "side-nav-link resume"><i class="fa fa-cogs"></i>Resume</a></li>
-                   <li><a class = "side-nav-link projects"><i class="fa fa-suitcase"></i>Projects</a></li>
-                   <li><a class = "side-nav-link blog"><i class="fa fa-comments"></i>Blog</a></li>
-                   <li><a class = "side-nav-link contact"><i class="fa fa-envelope"></i>Contact</a></li>
+                   <li><a href="#home" class = "side-nav-link home active"><i class="fa fa-home"></i>Home</a></li>
+                   <li><a href="#aboutMe" class = "side-nav-link aboutMe"><i class="fa fa-user"></i>About Me</a></li>
+                   <li><a href="#services" class = "side-nav-link services"><i class="fa fa-briefcase"></i>Services</a></li>
+                   <li><a href="#resume" class = "side-nav-link resume"><i class="fa fa-cogs"></i>Resume</a></li>
+                   <li><a href="#projects" class = "side-nav-link projects"><i class="fa fa-suitcase"></i>Projects</a></li>
+                   <!-- <li><a href="blog" class = "side-nav-link blog"><i class="fa fa-comments"></i>Blog</a></li> -->
+                   <li><a href="#contact" class = "side-nav-link contact"><i class="fa fa-envelope"></i>Contact</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
 
         <div id="right-section" class="right-section">
@@ -83,8 +83,8 @@
                             <div class="col-md-6">
                                 <div class="progress-wrap">
                                     <p>Angular</p>
-                                    <div class="progress" style="height:6px">
-                                        <div class= "progress-bar" role="progressbar" style="width:70%; height:6px">
+                                    <div class="progress">
+                                        <div class= "progress-bar" role="progressbar" style="width:70%">
                                             <span>70%</span>
                                         </div>
                                     </div>
@@ -94,8 +94,8 @@
                             <div class="col-md-6">
                                 <div class="progress-wrap">
                                     <p>JavaScript</p>
-                                    <div class="progress" style="height:6px">
-                                        <div class= "progress-bar" role="progressbar" style="width:80%; height:6px">
+                                    <div class="progress">
+                                        <div class= "progress-bar" role="progressbar" style="width:80%">
                                             <span>80%</span>
                                         </div>
                                     </div>
@@ -105,8 +105,8 @@
                             <div class="col-md-6">
                                 <div class="progress-wrap">
                                     <p>JQuery</p>
-                                    <div class="progress" style="height:6px">
-                                        <div class= "progress-bar" role="progressbar" style="width:80%; height:6px">
+                                    <div class="progress">
+                                        <div class= "progress-bar" role="progressbar" style="width:80%">
                                             <span>80%</span>
                                         </div>
                                     </div>
@@ -116,8 +116,8 @@
                             <div class="col-md-6">
                                 <div class="progress-wrap">
                                     <p>SASS</p>
-                                    <div class="progress" style="height:6px">
-                                        <div class= "progress-bar" role="progressbar" style="width:80%; height:6px">
+                                    <div class="progress">
+                                        <div class= "progress-bar" role="progressbar" style="width:80%">
                                             <span>80%</span>
                                         </div>
                                     </div>
@@ -127,8 +127,8 @@
                             <div class="col-md-6">
                                 <div class="progress-wrap">
                                     <p>Bootstrap</p>
-                                    <div class="progress" style="height:6px">
-                                        <div class= "progress-bar" role="progressbar" style="width:90%; height:6px">
+                                    <div class="progress">
+                                        <div class= "progress-bar" role="progressbar" style="width:90%">
                                             <span>90%</span>
                                         </div>
                                     </div>
@@ -138,8 +138,8 @@
                             <div class="col-md-6">
                                 <div class="progress-wrap">
                                     <p>HTML5 & CSS3</p>
-                                    <div class="progress" style="height:6px">
-                                        <div class= "progress-bar" role="progressbar" style="width:95%; height:6px">
+                                    <div class="progress">
+                                        <div class= "progress-bar" role="progressbar" style="width:95%">
                                             <span>95%</span>
                                         </div>
                                     </div>
@@ -179,10 +179,10 @@
                     <div class="col-12">
                         <div class="row mt-4 mx-0">
                             <div class="serviceCard-deck col-12 col-md-6 col-lg-4">
-                                <div class="serviceCard service-card-pro">
+                                <div class="serviceCard">
                                     <div class="header">
                                         <div class="icon-container">
-                                            <i class="fa fa-globe"></i>
+                                            <i class="fas fa-code"></i>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -199,7 +199,7 @@
                             </div>
 
                             <div class="serviceCard-deck col-12 col-md-6 col-lg-4">
-                                <div class="serviceCard service-card-pro">
+                                <div class="serviceCard">
                                     <div class="header">
                                         <div class="icon-container">
                                             <i class="fa fa-mobile service-icon"></i>
@@ -220,7 +220,7 @@
                             </div>
 
                             <div class="serviceCard-deck col-12 col-md-6 col-lg-4">
-                                <div class="serviceCard service-card-pro">
+                                <div class="serviceCard">
                                     <div class="header">
                                         <div class="icon-container">
                                             <i class="fas fa-laptop-code"></i>
@@ -228,10 +228,9 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="service-description">
-                                            <h4 class="card-title py-1">HTML & CSS</h4>
+                                            <h4 class="card-title py-1">Frontend Developer</h4>
                                             <p>
-                                                Creating a strong foundation for a website means getting the HTML and CSS architecture right.
-                                                If you've got a design I can create the front-end code for it
+                                                I like to code things from scratch, and enjoy bringing ideas to life in the browser.
                                             </p>
 
                                         </div>
@@ -596,6 +595,23 @@
             let y = Math.floor(document.getElementById(element).offsetTop);
             document.getElementById('right-section').scrollTop = y;
         }
+
+        let rightSection = document.querySelector('.right-section'); 
+
+        rightSection.addEventListener('scroll', function(event) {
+            let navigationLinks = document.querySelectorAll('nav ul li a');
+            let fromTop = window.scrollY;
+            navigationLinks.forEach(function(link) {
+                let section = document.querySelector(link.hash);
+                
+                if(section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+
+            });
+        });
     </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

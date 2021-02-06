@@ -14,10 +14,13 @@ $color-tan: #cf9c63;
 $color-light: white;
 $color-silver: silver;
 $color-bg-light: #f7f7f7;
+$color-default-border: #dfdede;
 
 $color-html: rgb(227, 76, 38);
 $color-js: rgb(240, 219, 79);
 $color-angular: rgb(166, 18, 13);
+
+$accent-light:#fff1e1;
 
 
 $font-quicksand: "Quicksand", Arial, sans-serif;
@@ -441,24 +444,14 @@ html body{
                     }
                     .progress{
                         overflow: visible;
+                        height: 4px;
                     }
                     .progress-bar{
-                        border-radius: 100px;
                         position: relative;
                         text-align: right;
                         background: $color-tan;
                         overflow: visible;
-                        &:after{
-                            content: '';
-                            position: absolute;
-                            top: -2px;
-                            right: 0;
-                            border-radius: 50%;
-                            background-color: $color-tan;
-                            border: 1px solid $color-tan;
-                            width: 10px;
-                            height: 10px;
-                        }
+                        height: 4px;
                         span{
                             position: absolute;
                             top: -35px;
@@ -517,35 +510,36 @@ html body{
                 .serviceCard {
                     position: relative;
                     box-sizing: border-box;
-                    padding: 60px 22px;
+                    padding: 30px;
                     background: transparent;
-                    border: 1px solid $color-tan;
-                    max-height: 500px;
-                    min-height: 500px;
+                    border: 1px solid $accent-light;
+                    max-height: 300px;
+                    border-radius: 5px;
                     transition: all .5s linear;
                     .header, .card-title {
                         margin-bottom: 15px;
-                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 700;
                     }
                     .icon-container {
-                        border-radius: 100px;
-                        width: 90px;
-                        height: 90px;
-                        background: $color-tan;
+                        border-radius: 10px;
+                        width: 65px;
+                        height: 65px;
+                        background: #fff1e1;
                         transition: transform .5s ease;
-                        margin: 0 auto;
+                        border: 1px solid $color-tan;
                         i {
                             color: $color-light;
                             margin: 50%;
                             transform: translate(-50%, -50%);
-                            font-size: 35px;
+                            font-size: 26px;
                         }
                     }
-                    p {
-                        font-size: 18px;
-                        margin: 26px 4px;
-                        text-align: center;
-                    }
+                    // p {
+                    //     font-size: 18px;
+                    //     margin: 26px 4px;
+                    //     text-align: center;
+                    // }
                     .card-inner-grid {
                         margin: 20px 0px 20px 0px;
                     }
