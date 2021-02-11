@@ -652,14 +652,15 @@ html body {
 
 .main-wrapper .right-section .resume-section .resume-sec-content .timeLine-wrapper {
   border-left: 2px solid silver;
+  margin: 10px;
 }
 
 .main-wrapper .right-section .resume-section .resume-sec-content .timeLine-wrapper .timeLine-item {
   background-color: white;
   position: relative;
-  margin: 5% 0% 5% 3.5%;
+  margin: 20px;
+  padding: 15px;
   border-left: 2px solid #cf9c63;
-  padding: 5px 10px;
   -webkit-box-shadow: 0px 0px 2px silver;
           box-shadow: 0px 0px 2px silver;
 }
@@ -697,19 +698,27 @@ html body {
           box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.2);
 }
 
+.main-wrapper .right-section .resume-section .resume-sec-content .timeLine-wrapper .timeLine-item:hover h4, .main-wrapper .right-section .resume-section .resume-sec-content .timeLine-wrapper .timeLine-item:hover .clg-details {
+  color: #cf9c63;
+}
+
 .main-wrapper .right-section .resume-section .resume-sec-content .timeLine-wrapper .timeLine-item h4 {
-  margin: 2% 0%;
+  margin: 10px 0px;
   font-weight: bold;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 .main-wrapper .right-section .resume-section .resume-sec-content .timeLine-wrapper .timeLine-item .clg-details {
-  margin: 2% 0%;
+  margin: 10px 0px;
   font-size: 13px;
   color: black;
+  font-weight: 700;
 }
 
 .main-wrapper .right-section .resume-section .resume-sec-content .timeLine-wrapper .timeLine-item .clg-details .year {
-  color: #cf9c63;
+  font-weight: 500;
+  color: black;
   padding-right: 2%;
   border-right: 1px solid rgba(0, 0, 0, 0.7);
 }
@@ -871,12 +880,12 @@ html body {
 
 .main-wrapper .projects-section .grid-row .grid-container .fltr-card-container {
   margin-top: 1%;
-  background-size: cover;
+  background-size: contain !important;
+  background-position: center !important;
   -webkit-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.1);
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   margin: 1%;
-  max-width: 220px;
   height: 250px;
   padding: 0px;
   display: none;
