@@ -588,12 +588,13 @@ html body{
                 
                 .timeLine-wrapper{
                     border-left: 2px solid $color-silver;
+                    margin: 10px;
                     .timeLine-item{
                         background-color: $color-light;
                         position: relative;
-                        margin: 5% 0% 5% 3.5%;
+                        margin: 20px;
+                        padding: 15px;
                         border-left: 2px solid $color-tan;
-                        padding: 5px 10px;
                         box-shadow: 0px 0px 2px $color-silver;
                         &:before{
                             content: "";
@@ -622,18 +623,24 @@ html body{
                             transform: translateY(-5px);
                             transition-duration: .3s;
                             box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.2);
+                            h4, .clg-details {
+                                color: $color-tan;
+                            }
                         }
 
                         h4{
-                            margin: 2% 0%;
+                            margin: 10px 0px;
                             font-weight: bold;
+                            transition: all .3s linear;
                         }
                         .clg-details{
-                            margin: 2% 0%;
+                            margin: 10px 0px;
                             font-size: 13px;
                             color: $color-dark;
+                            font-weight: 700;
                             .year{
-                                color: $color-tan;
+                                font-weight: 500;
+                                color: $color-dark;
                                 padding-right: 2%;
                                 border-right: 1px solid $body-text-color;
                             }
@@ -798,11 +805,12 @@ html body{
                     padding: 1%;
                     .fltr-card-container{
                         margin-top: 1%;
-                        background-size: cover;
+                        background-size: contain !important;
+                        background-position: center !important;
                         box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.1);
-                        background-repeat: no-repeat;
+                        background-repeat: no-repeat !important;
                         margin: 1%;
-                        max-width: 220px;
+                        // max-width: 220px;
                         height: 250px;
                         padding: 0px;
                         display: none;
@@ -867,10 +875,9 @@ html body{
                 
         // ====  contactMe section Starts  ====
         .contactMe-div{
-            // background-color: $color-dark2;
-            background: url("../Images/close-up-dark-dirty-592753.jpg");
+            background: url("../Images/map.jpg");
             background-size: cover;
-            background-position: center;
+            background-position: left;
             background-attachment: fixed;
             background-repeat: no-repeat;
             padding: 0px;
@@ -879,6 +886,7 @@ html body{
                 padding: 2% 0% 4%;
                 width: 100%;
                 height: 100%;
+                position: absolute;
                 background-color: $color-overlay;
                 // color: white;
                 
@@ -901,23 +909,23 @@ html body{
                         .contact-box{
                             padding: 1% 3%;
                             cursor: pointer;
-                            // border: 1px solid $color-tan;
                             .icon-container, .contact-detail{
                                 text-align: center;
-                                color: $color-light;
                                 font-size: 18px;
                                 margin: 2% 1%;
-                                // max-width: 100%;
-                                i{
-                                    color: $color-tan;
-                                }
+                                .icon {
+                                        color: $color-tan;
+                                    }
                             }
+                            .contact-detail{
+                                color: $color-light;
+                            };
 
                             &:hover {
                                 .contact-detail{
                                     color: $color-tan;
                                 }
-                                i{
+                                .icon{
                                   color: $color-light;  
                                 }
                             }
@@ -955,6 +963,7 @@ html body{
                         }
                         .sendMessagebtn{
                             margin: 1% 3%;
+                            width: auto !important;
                             i{
                                 font-size: 15px;
                                 margin-right: 5px;
