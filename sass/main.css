@@ -951,9 +951,9 @@ html body {
 }
 
 .main-wrapper .contactMe-div {
-  background: url("../Images/close-up-dark-dirty-592753.jpg");
+  background: url("../Images/map.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: left;
   background-attachment: fixed;
   background-repeat: no-repeat;
   padding: 0px;
@@ -963,6 +963,7 @@ html body {
   padding: 2% 0% 4%;
   width: 100%;
   height: 100%;
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.89);
 }
 
@@ -995,20 +996,23 @@ html body {
 
 .main-wrapper .contactMe-div .contactMe-div-overlay .contactMe-content .contact-box-container .contact-box .icon-container, .main-wrapper .contactMe-div .contactMe-div-overlay .contactMe-content .contact-box-container .contact-box .contact-detail {
   text-align: center;
-  color: white;
   font-size: 18px;
   margin: 2% 1%;
 }
 
-.main-wrapper .contactMe-div .contactMe-div-overlay .contactMe-content .contact-box-container .contact-box .icon-container i, .main-wrapper .contactMe-div .contactMe-div-overlay .contactMe-content .contact-box-container .contact-box .contact-detail i {
+.main-wrapper .contactMe-div .contactMe-div-overlay .contactMe-content .contact-box-container .contact-box .icon-container .icon, .main-wrapper .contactMe-div .contactMe-div-overlay .contactMe-content .contact-box-container .contact-box .contact-detail .icon {
   color: #cf9c63;
+}
+
+.main-wrapper .contactMe-div .contactMe-div-overlay .contactMe-content .contact-box-container .contact-box .contact-detail {
+  color: white;
 }
 
 .main-wrapper .contactMe-div .contactMe-div-overlay .contactMe-content .contact-box-container .contact-box:hover .contact-detail {
   color: #cf9c63;
 }
 
-.main-wrapper .contactMe-div .contactMe-div-overlay .contactMe-content .contact-box-container .contact-box:hover i {
+.main-wrapper .contactMe-div .contactMe-div-overlay .contactMe-content .contact-box-container .contact-box:hover .icon {
   color: white;
 }
 
@@ -1048,6 +1052,7 @@ html body {
 
 .main-wrapper .contactMe-div .contactMe-div-overlay .contact-form-container .contact-form .sendMessagebtn {
   margin: 1% 3%;
+  width: auto !important;
 }
 
 .main-wrapper .contactMe-div .contactMe-div-overlay .contact-form-container .contact-form .sendMessagebtn i {
