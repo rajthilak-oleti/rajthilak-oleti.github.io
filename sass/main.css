@@ -313,8 +313,8 @@ html body {
   padding: 0px;
   overflow: hidden auto;
   z-index: 999;
-  width: 14%;
-  max-width: 14%;
+  width: 250px;
+  max-width: 250px;
 }
 
 .main-wrapper .side-menu .user-div {
@@ -373,7 +373,7 @@ html body {
   display: block;
   text-decoration: none;
   color: #cf9c63;
-  padding: 3% 10%;
+  padding: 10px 20px;
   -webkit-transition: color .4s ease-out;
   transition: color .4s ease-out;
 }
@@ -383,8 +383,7 @@ html body {
 }
 
 .main-wrapper .side-menu .side-nav ul li a.active::before {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  width: 100%;
 }
 
 .main-wrapper .side-menu .side-nav ul li a svg.svg-inline--fa {
@@ -397,23 +396,19 @@ html body {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 0%;
   height: 100%;
   background-color: white;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  -webkit-transition: -webkit-transform .2s ease-in;
-  transition: -webkit-transform .2s ease-in;
-  transition: transform .2s ease-in;
-  transition: transform .2s ease-in, -webkit-transform .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
   z-index: -1;
 }
 
 .main-wrapper .right-section {
   float: left;
-  margin-left: 14%;
+  margin-left: 250px;
   padding: 0;
-  width: calc(100% - 14%);
+  width: calc(100% - 250px);
   position: relative;
   max-height: 100vh;
   overflow: hidden auto;
@@ -498,7 +493,6 @@ html body {
   padding-right: 2px;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
-  border-right: 4px solid #cf9c63 !important;
 }
 
 .main-wrapper .right-section .about-section .description {
@@ -935,13 +929,9 @@ html body {
 }
 
 .main-wrapper .projects-section .grid-row .grid-container .fltr-card-container {
-  margin-top: 1%;
-  background-size: contain !important;
-  background-position: center !important;
   -webkit-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.1);
-  background-repeat: no-repeat !important;
-  margin: 1%;
+  margin: 10px;
   height: 250px;
   padding: 0px;
   display: none;
@@ -949,6 +939,22 @@ html body {
           transform: scale(0);
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+.main-wrapper .projects-section .grid-row .grid-container .fltr-card-container .filter-card-inner {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  z-index: 0;
+}
+
+.main-wrapper .projects-section .grid-row .grid-container .fltr-card-container .filter-card-inner img {
+  width: 100%;
+  height: 100%;
 }
 
 .main-wrapper .projects-section .grid-row .grid-container .fltr-card-container .img-overlay-div {
@@ -968,20 +974,21 @@ html body {
   color: white;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
+  z-index: 99;
 }
 
 .main-wrapper .projects-section .grid-row .grid-container .fltr-card-container .img-overlay-div .overlay-content {
   width: 100%;
   text-align: center;
-  padding: 2% 3%;
+  padding: 10px;
   font-family: "Poppins", sans-serif;
 }
 
 .main-wrapper .projects-section .grid-row .grid-container .fltr-card-container .img-overlay-div .overlay-content h4 {
   font-size: 16px;
   font-weight: bold;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(1%);
+          transform: translateX(1%);
   opacity: 0;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
@@ -989,11 +996,17 @@ html body {
 
 .main-wrapper .projects-section .grid-row .grid-container .fltr-card-container .img-overlay-div .overlay-content p {
   color: #cf9c63;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
   opacity: 0;
   -webkit-transition: all .5s linear;
   transition: all .5s linear;
+}
+
+.main-wrapper .projects-section .grid-row .grid-container .fltr-card-container:hover .filter-card-inner {
+  opacity: .12;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
 }
 
 .main-wrapper .projects-section .grid-row .grid-container .fltr-card-container:hover .img-overlay-div {
@@ -1026,7 +1039,6 @@ html body {
 .main-wrapper .contactMe-div .contactMe-div-overlay {
   width: 100%;
   height: 100%;
-  position: absolute;
   background-color: rgba(0, 0, 0, 0.89);
 }
 
