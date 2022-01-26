@@ -373,7 +373,7 @@ html body {
   display: block;
   text-decoration: none;
   color: #cf9c63;
-  padding: 3% 10%;
+  padding: 10px 20px;
   -webkit-transition: color .4s ease-out;
   transition: color .4s ease-out;
 }
@@ -383,8 +383,7 @@ html body {
 }
 
 .main-wrapper .side-menu .side-nav ul li a.active::before {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  width: 100%;
 }
 
 .main-wrapper .side-menu .side-nav ul li a svg.svg-inline--fa {
@@ -397,15 +396,11 @@ html body {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 0%;
   height: 100%;
   background-color: white;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  -webkit-transition: -webkit-transform .2s ease-in;
-  transition: -webkit-transform .2s ease-in;
-  transition: transform .2s ease-in;
-  transition: transform .2s ease-in, -webkit-transform .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
   z-index: -1;
 }
 
@@ -985,15 +980,15 @@ html body {
 .main-wrapper .projects-section .grid-row .grid-container .fltr-card-container .img-overlay-div .overlay-content {
   width: 100%;
   text-align: center;
-  padding: 2% 3%;
+  padding: 10px;
   font-family: "Poppins", sans-serif;
 }
 
 .main-wrapper .projects-section .grid-row .grid-container .fltr-card-container .img-overlay-div .overlay-content h4 {
   font-size: 16px;
   font-weight: bold;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(1%);
+          transform: translateX(1%);
   opacity: 0;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
@@ -1001,8 +996,8 @@ html body {
 
 .main-wrapper .projects-section .grid-row .grid-container .fltr-card-container .img-overlay-div .overlay-content p {
   color: #cf9c63;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
   opacity: 0;
   -webkit-transition: all .5s linear;
   transition: all .5s linear;
