@@ -79,7 +79,7 @@ html body {
   font-size: 11px;
 }
 
-.section-heading div span i {
+.section-heading div span .svg-inline--fa {
   -webkit-animation: rotate-icon 1s linear infinite;
           animation: rotate-icon 1s linear infinite;
   color: #303030;
@@ -950,6 +950,8 @@ html body {
   background-position: center !important;
   background-repeat: no-repeat !important;
   z-index: 0;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .main-wrapper .projects-section .grid-row .grid-container .fltr-card-container .filter-card-inner img {
