@@ -52,7 +52,6 @@ html body {
 
 .section {
   padding: 30px 15px;
-  max-height: -webkit-max-content;
   max-height: -moz-max-content;
   max-height: max-content;
 }
@@ -72,8 +71,7 @@ html body {
   font-size: 11px;
 }
 .section-heading div span .svg-inline--fa {
-  -webkit-animation: rotate-icon 1s linear infinite;
-          animation: rotate-icon 1s linear infinite;
+  animation: rotate-icon 1s linear infinite;
   color: #303030;
 }
 .section-heading div span:before, .section-heading div span:after {
@@ -121,42 +119,12 @@ html body {
   transform: translateY(5px);
 }
 
-@-webkit-keyframes typing {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
 @keyframes typing {
   from {
     width: 0%;
   }
   to {
     width: 100%;
-  }
-}
-@-webkit-keyframes btnZoom {
-  0% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 0.5;
-    transform: scale(1.2, 1.5);
-  }
-  50% {
-    opacity: 0.3;
-    transform: scale(1.5, 1.7);
-  }
-  70% {
-    opacity: 0.2;
-    transform: scale(1.7, 2);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(2, 2.2);
   }
 }
 @keyframes btnZoom {
@@ -180,30 +148,12 @@ html body {
     transform: scale(2, 2.2);
   }
 }
-@-webkit-keyframes rotate-icon {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 @keyframes rotate-icon {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes fade_in_show {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
   }
 }
 @keyframes fade_in_show {
@@ -216,28 +166,12 @@ html body {
     transform: scale(1);
   }
 }
-@-webkit-keyframes dynamic-border {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
 @keyframes dynamic-border {
   from {
     width: 0%;
   }
   to {
     width: 100%;
-  }
-}
-@-webkit-keyframes overlay-reveal {
-  from {
-    height: 24%;
-  }
-  to {
-    height: 100%;
   }
 }
 @keyframes overlay-reveal {
@@ -321,7 +255,8 @@ html body {
   transition: color 0.4s ease-out;
 }
 .main-wrapper .side-menu .side-nav ul li a.active {
-  color: rgb(0, 0, 0);
+  color: #cf9c63;
+  font-weight: 800;
 }
 .main-wrapper .side-menu .side-nav ul li a.active::before {
   width: 100%;
@@ -414,8 +349,7 @@ html body {
   color: #cf9c63 !important;
   vertical-align: bottom;
   padding-right: 2px;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
 }
 .main-wrapper .right-section .about-section .description {
   margin: 4% 5%;
@@ -499,7 +433,6 @@ html body {
   background: transparent;
   border: 1px solid #ebebeb;
   min-height: 300px;
-  max-height: -webkit-max-content;
   max-height: -moz-max-content;
   max-height: max-content;
   border-radius: 5px;
@@ -733,7 +666,6 @@ html body {
 .main-wrapper .download-resume-section .download-section-overlay .overlay-inner h4 {
   text-transform: uppercase;
   color: white;
-  min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
   margin: 0px 10px;
@@ -743,7 +675,6 @@ html body {
   padding: 8px 30px;
   margin-left: auto;
   margin-bottom: 25px;
-  min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
 }
@@ -838,8 +769,7 @@ html body {
 }
 .main-wrapper .projects-section .grid-row .grid-container .show {
   display: block;
-  -webkit-animation: fade_in_show 0.5s;
-          animation: fade_in_show 0.5s;
+  animation: fade_in_show 0.5s;
   transform: scaleX(1);
 }
 .main-wrapper .contactMe-div {
@@ -959,8 +889,7 @@ html body {
   cursor: pointer;
 }
 .main-wrapper .social-links-section .social-section-inner-grid .icon-container:hover:after {
-  -webkit-animation: btnZoom 0.5s linear;
-          animation: btnZoom 0.5s linear;
+  animation: btnZoom 0.5s linear;
 }
 .main-wrapper .social-links-section .social-section-inner-grid .icon-container .icon-container-inner {
   display: flex;
