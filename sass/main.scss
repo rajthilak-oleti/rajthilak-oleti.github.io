@@ -321,7 +321,8 @@ html body{
                         padding: 10px 20px;
                         transition: color .4s ease-out;
                         &.active {
-                            color: $color-dark;
+                            color: $color-tan;
+                            font-weight: 800;
                             &::before {
                               width: 100%;
                             }
