@@ -292,10 +292,31 @@ html body{
             span{
                font-size : 13px;
                text-transform: uppercase;
-               background-color: $color-dark;
-               padding: 5px;
-               border-radius: 5px;
                font-weight: 600;
+            }
+            .social-links-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5px 0px;
+                .icon-container {
+                    position: relative;
+                    width: 35px;
+                    height: 35px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    .svg-inline--fa {
+                        &.social-icon {
+                            color: $color-tan;
+                        }
+                    }
+                    &:hover{
+                        background-color: black;
+                        cursor: pointer;
+                    }
+                }
             }
         }
         .side-nav{
@@ -326,7 +347,7 @@ html body{
                             color: $color-bg-light;
                             font-weight: 800;
                             &::before {
-                              width: 135px;
+                              width: 135px !important;
                             }
                         }
                         &:hover {
@@ -1032,58 +1053,11 @@ html body{
         }
         // ====  ContactUs section Ends  ====
 
-        // ====  Social Links section Starts  ====
+        // ====  Copyright section Starts  ====
         .social-links-section{
             padding: 35px;
-            .social-section-inner-grid{
-              margin: 10px 0px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-                .icon-container{
-                  background-color: $color-dark;
-                  text-align: center;
-                  color: white;
-                  border: 1px solid $color-dark;
-                  position: relative;
-                  width: 35px;
-                  height: 35px;
-                  margin: 10px;
-
-                    &:after{
-                        content: '';
-                        position: absolute;
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                        border: 1px solid $color-dark;
-                        top: 0;
-                        left: 0; 
-                        opacity: 0;
-                    }
-
-                    &:hover{
-                        background-color: $color-tan;
-                        border-color: $color-tan;
-                        cursor: pointer;
-
-                        &:after{
-                            animation: btnZoom .5s linear;
-                        }
-                    }
-
-                  .icon-container-inner {
-                    display: flex;
-                    height: 100%;
-                    width: 100%;
-                    justify-content: center;
-                    align-items: center;
-                  }
-                }
-            }
             .copyrights-text{
                 color: $color-dark;
-                padding: 5px;
                 span{
                   margin: 0px 5px;
                   padding-bottom: 2px;
@@ -1092,7 +1066,7 @@ html body{
             }
             
         }
-        // ====  Social Links section Ends  ====
+        // ====  Copyright section Ends  ====
     }
 
 
