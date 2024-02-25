@@ -225,10 +225,29 @@ html body {
 .main-wrapper .side-menu .user-div span {
   font-size: 13px;
   text-transform: uppercase;
-  background-color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+.main-wrapper .side-menu .user-div .social-links-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0px;
+}
+.main-wrapper .side-menu .user-div .social-links-container .icon-container {
+  position: relative;
+  width: 35px;
+  height: 35px;
   padding: 5px;
   border-radius: 5px;
-  font-weight: 600;
+  cursor: pointer;
+}
+.main-wrapper .side-menu .user-div .social-links-container .icon-container .svg-inline--fa.social-icon {
+  color: #cf9c63;
+}
+.main-wrapper .side-menu .user-div .social-links-container .icon-container:hover {
+  background-color: black;
+  cursor: pointer;
 }
 .main-wrapper .side-menu .side-nav {
   padding: 10px 0px;
@@ -262,7 +281,7 @@ html body {
   font-weight: 800;
 }
 .main-wrapper .side-menu .side-nav ul li a.active::before {
-  width: 135px;
+  width: 135px !important;
 }
 .main-wrapper .side-menu .side-nav ul li a:hover::before {
   transition: all 0.3s cubic-bezier(0.5, 1.6, 0.4, 0.7);
@@ -864,51 +883,8 @@ html body {
 .main-wrapper .social-links-section {
   padding: 35px;
 }
-.main-wrapper .social-links-section .social-section-inner-grid {
-  margin: 10px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main-wrapper .social-links-section .social-section-inner-grid .icon-container {
-  background-color: rgb(0, 0, 0);
-  text-align: center;
-  color: white;
-  border: 1px solid rgb(0, 0, 0);
-  position: relative;
-  width: 35px;
-  height: 35px;
-  margin: 10px;
-}
-.main-wrapper .social-links-section .social-section-inner-grid .icon-container:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgb(0, 0, 0);
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-.main-wrapper .social-links-section .social-section-inner-grid .icon-container:hover {
-  background-color: #cf9c63;
-  border-color: #cf9c63;
-  cursor: pointer;
-}
-.main-wrapper .social-links-section .social-section-inner-grid .icon-container:hover:after {
-  animation: btnZoom 0.5s linear;
-}
-.main-wrapper .social-links-section .social-section-inner-grid .icon-container .icon-container-inner {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
 .main-wrapper .social-links-section .copyrights-text {
   color: rgb(0, 0, 0);
-  padding: 5px;
 }
 .main-wrapper .social-links-section .copyrights-text span {
   margin: 0px 5px;
