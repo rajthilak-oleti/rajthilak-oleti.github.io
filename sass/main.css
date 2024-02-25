@@ -206,15 +206,14 @@ html body {
 .main-wrapper .side-menu .user-div {
   width: 100%;
   text-align: left;
-  margin: 25px 0px 15px 0px;
+  padding: 20px 0px;
   text-align: center;
 }
 .main-wrapper .side-menu .user-div .userImg-container {
-  margin: 5px 8px;
+  margin: 10px auto;
   width: 130px;
   height: 130px;
   border-radius: 1000px;
-  margin: 25px auto;
   background: url("../Images/RajThilak.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -226,9 +225,13 @@ html body {
 .main-wrapper .side-menu .user-div span {
   font-size: 13px;
   text-transform: uppercase;
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 600;
 }
 .main-wrapper .side-menu .side-nav {
-  margin: 30px 0px 0px 0px;
+  padding: 10px 0px;
   box-sizing: border-box;
   font-family: "Quicksand", Arial, sans-serif;
   text-transform: uppercase;
@@ -238,12 +241,12 @@ html body {
 .main-wrapper .side-menu .side-nav ul {
   padding: 0px;
   margin: 0px;
+  text-align: center;
 }
 .main-wrapper .side-menu .side-nav ul li {
-  padding: 5px 0px;
   letter-spacing: 1px;
   list-style: none;
-  margin: 20px 0px;
+  margin: 15px 0px;
   cursor: pointer;
 }
 .main-wrapper .side-menu .side-nav ul li a {
@@ -255,11 +258,15 @@ html body {
   transition: color 0.4s ease-out;
 }
 .main-wrapper .side-menu .side-nav ul li a.active {
-  color: #cf9c63;
+  color: #f7f7f7;
   font-weight: 800;
 }
 .main-wrapper .side-menu .side-nav ul li a.active::before {
-  width: 100%;
+  width: 135px;
+}
+.main-wrapper .side-menu .side-nav ul li a:hover::before {
+  transition: all 0.3s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  width: 15px;
 }
 .main-wrapper .side-menu .side-nav ul li a svg.svg-inline--fa {
   margin-right: 10px;
@@ -268,12 +275,13 @@ html body {
 .main-wrapper .side-menu .side-nav ul li a::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
   width: 0%;
-  height: 100%;
-  background-color: white;
-  transition: all 0.2s ease-in;
+  height: 1px;
+  background-color: #cf9c63;
+  transition: all 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
   z-index: -1;
 }
 .main-wrapper .right-section {
@@ -450,7 +458,7 @@ html body {
   background: #fff1e1;
   transition: transform 0.5s ease;
   border: 1px solid #ffdab0;
-  transition: all 0.5s linear;
+  transition: all 0.5s cubic-bezier(0.5, 2.6, 0.4, 0.7);
 }
 .main-wrapper .right-section .services-section .serviceCard-deck .serviceCard .icon-container svg.svg-inline--fa {
   color: #cf9c63;

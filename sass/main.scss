@@ -273,14 +273,13 @@ html body{
         .user-div{
             width: 100%;
             text-align: left;
-            margin: 25px 0px 15px 0px;  
+            padding: 20px 0px;  
             text-align: center;         
             .userImg-container{
-                margin: 5px 8px;
+                margin: 10px auto;
                 width: 130px;
                 height: 130px;
                 border-radius: 1000px;
-                margin: 25px auto;
                 background: url('../Images/RajThilak.jpg');
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -293,10 +292,14 @@ html body{
             span{
                font-size : 13px;
                text-transform: uppercase;
+               background-color: $color-dark;
+               padding: 5px;
+               border-radius: 5px;
+               font-weight: 600;
             }
         }
         .side-nav{
-            margin: 30px 0px 0px 0px;
+            padding: 10px 0px;
             box-sizing: border-box;
             font-family: $font-quicksand;
             text-transform: uppercase;
@@ -306,12 +309,11 @@ html body{
             ul{
                 padding: 0px;
                 margin: 0px;
-
+                text-align: center;
                 li{
-                    padding: 5px 0px;
                     letter-spacing: 1px;
                     list-style: none;
-                    margin: 20px 0px; 
+                    margin: 15px 0px; 
                     cursor: pointer;
                     a{
                         position: relative;
@@ -321,10 +323,17 @@ html body{
                         padding: 10px 20px;
                         transition: color .4s ease-out;
                         &.active {
-                            color: $color-tan;
+                            color: $color-bg-light;
                             font-weight: 800;
                             &::before {
-                              width: 100%;
+                              width: 135px;
+                            }
+                        }
+                        &:hover {
+                            &::before {
+                                transition: all .3s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+                                width: 15px;
+
                             }
                         }
                         svg.svg-inline--fa{
@@ -334,14 +343,13 @@ html body{
                         &::before {
                             content: '';
                             position: absolute;
-                            left: 0;
-                            top: 0;
+                            left: 50%;
+                            bottom: 0;
+                            transform: translateX(-50%);
                             width: 0%;
-                            height: 100%;
-                            background-color: $color-light;
-                            // transform: translateX(-100%);
-                            transition: all .2s ease-in;
-                            // cubic-bezier(0.5, 1.6, 0.4, 0.7);
+                            height: 1px;
+                            background-color: $color-tan;
+                            transition: all .5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
                             z-index: -1;
                         }
                     }
@@ -547,7 +555,7 @@ html body{
                         background: #fff1e1;
                         transition: transform .5s ease;
 						border: 1px solid #ffdab0;
-						transition: all .5s linear;
+						transition: all .5s cubic-bezier(0.5, 2.6, 0.4, 0.7);
                         svg.svg-inline--fa {
                             color: $color-tan;
                             margin: 50%;
